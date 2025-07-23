@@ -1,0 +1,29 @@
+def chatbot():
+    print("🤖 Hello! I'm Ajay's ChatBot. Type 'bye' to exit.\n")
+
+    while True:
+        user_input = input("You: ").lower()
+
+        if user_input in ["hi", "hello", "hey"]:
+            print("Bot: Hello! How can I assist you?")
+        elif user_input in ["how are you", "how are you?"]:
+            print("Bot: I'm doing great! How about you?")
+        elif user_input in ["what is your name?", "who are you?"]:
+            print("Bot: I am Ajay's chatbot created for internship Task 3.")
+        elif user_input in ["what is python?"]:
+            print("Bot: Python is a powerful and easy-to-learn programming language.")
+        elif user_input in ["what is ai?", "what is artificial intelligence?"]:
+            print("Bot: AI means Artificial Intelligence — making machines act smart.")
+        elif user_input in ["who created you?", "who made you?"]:
+            print("Bot: I was created by Ajay Kumar during his CodTech internship.")
+        elif user_input in ["what is your purpose?", "why are you here?"]:
+            print("Bot: I help answer simple questions using Python.")
+        elif user_input in ["what is codtech?"]:
+            print("Bot: CodTech is an internship platform to help students grow in tech.")
+        elif user_input in ["bye", "exit", "goodbye"]:
+            print("Bot: Goodbye! Have a great day 😊")
+            break
+        else:
+            print("Bot: Sorry, I didn't understand that.")
+
+chatbot()
